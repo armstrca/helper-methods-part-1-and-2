@@ -8,7 +8,11 @@
 <%#= details_path(42) %>
 <!--</div>-->
 
-
+<form>
+  <input name="zebra[]">
+  <input name="zebra[]">
+  <button>Submit</button>
+</form>
 
 <%= link_to 'Add a new movie', new_movie_path %>
 
@@ -40,7 +44,7 @@
     </th>
   </tr>
 
-  <% @list_of_movies.each do |a_movie| %>
+  <% @movies.each do |a_movie| %>
     <tr>
       <td>
         <%= a_movie.id %>
