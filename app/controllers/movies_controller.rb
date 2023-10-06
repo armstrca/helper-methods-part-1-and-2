@@ -29,7 +29,7 @@ class MoviesController < ApplicationController
       @movie.save
       redirect_to movies_path, notice: "Movie created successfully."
     else
-      render template: "movies/new.html.erb"
+      render "movies/new"
     end
   end
 
